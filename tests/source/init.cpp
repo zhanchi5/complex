@@ -70,10 +70,10 @@ SCENARIO("testing /"){
 }
   
 SCENARIO("testing /="){
-  Complex a(5,2);
-  Complex b(3,-3);
+  Complex a(-1,3);
+  Complex b(1,2);
   
-  Complex c(0.5,1.16667);
+  Complex c(1,1);
   a/=b;
   REQUIRE (a == c);  
 }  
