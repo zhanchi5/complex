@@ -1,4 +1,5 @@
 #include <iostream>
+#include "complex.hpp"
 
 int main ()
 {
@@ -39,8 +40,7 @@ int main ()
     Complex temp9 = a*3;
     cout << "a*3 = " << temp9 << endl;
 
-    //Complex temp9 = a*b =1;
-    //cout << "a = 1: " << a << endl;
+
 
     if (a == b){
         cout << a << endl;
