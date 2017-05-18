@@ -92,7 +92,7 @@ public:
 
     
     Complex operator /=(Complex &c){
-        Complex temp
+        Complex temp;
         double r = c.re * c.re + c.im * c.im;
         temp.re = (re * c.re + im * c.im) / r;
         temp.im = (im * c.re - re * c.im) / r;
