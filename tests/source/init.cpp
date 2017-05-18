@@ -2,7 +2,7 @@
 #include "catch.hpp"
 
 
-SCENARIO("testing +"){
+SCENARIO("+"){
   Complex a(5,2);
   Complex b(3,-3);
   
@@ -12,7 +12,7 @@ SCENARIO("testing +"){
   REQUIRE (temp == c);
 }
 
-SCENARIO("testing +="){
+SCENARIO("+="){
   Complex a(5,2);
   Complex b(3,-3);
   
@@ -21,7 +21,7 @@ SCENARIO("testing +="){
   REQUIRE (temp == c);
 }
 
-SCENARIO("testing *"){
+SCENARIO("*"){
   Complex a(5,2);
   Complex b(3,-3);
   
@@ -31,7 +31,7 @@ SCENARIO("testing *"){
   REQUIRE (temp == c);
 }
 
-SCENARIO("testing *="){
+SCENARIO("*="){
   Complex a(5,2);
   Complex b(3,-3);
   
@@ -40,7 +40,7 @@ SCENARIO("testing *="){
   REQUIRE (temp == c);
 } 
 
-SCENARIO("testing -"){
+SCENARIO("-"){
   Complex a(5,2);
   Complex b(3,-3);
   
@@ -50,7 +50,7 @@ SCENARIO("testing -"){
   REQUIRE (temp == c);
 }
 
-SCENARIO("testing -="){
+SCENARIO("-="){
   Complex a(5,2);
   Complex b(3,-3);
   
@@ -60,7 +60,7 @@ SCENARIO("testing -="){
   REQUIRE (temp == c);
 }
 
-SCENARIO("testing /"){
+SCENARIO("/"){
   Complex a(10,4);
   Complex b(5,2);
   
@@ -69,7 +69,7 @@ SCENARIO("testing /"){
   REQUIRE (temp == c);
 }
   
-SCENARIO("testing /="){
+SCENARIO("/="){
   Complex a(5,2);
   Complex b(3,-3);
   
@@ -77,3 +77,5 @@ SCENARIO("testing /="){
   Complex temp = a/=b;
   REQUIRE (temp == c);  
 }  
+
+SCENARIO ("testing 
