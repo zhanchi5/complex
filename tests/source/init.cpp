@@ -35,7 +35,7 @@ SCENARIO("testing *="){
   Complex a(5,2);
   Complex b(3,-3);
   
-  Complex c(105,-618);
+  Complex c(21,-9);
   Complex temp = a*=b;
   REQUIRE (temp == c);
 } 
