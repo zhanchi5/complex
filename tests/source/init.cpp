@@ -11,6 +11,7 @@ SCENARIO("testing +"){
   Complex temp = a + b;
   REQUIRE (temp == c);
 }
+
 SCENARIO("testing +="){
   Complex a(5,2);
   Complex b(3,-3);
@@ -19,6 +20,7 @@ SCENARIO("testing +="){
   Complex temp = a+=b;
   REQUIRE (temp == c);
 }
+
 SCENARIO("testing *"){
   Complex a(5,2);
   Complex b(3,-3);
@@ -28,6 +30,7 @@ SCENARIO("testing *"){
   Complex temp = a*b;
   REQUIRE (temp == c);
 }
+
 SCENARIO("testing *="){
   Complex a(5,2);
   Complex b(3,-3);
@@ -35,7 +38,7 @@ SCENARIO("testing *="){
   Complex c(15,-6);
   Complex temp = a*=b;
   REQUIRE (temp == c);
-  } 
+} 
 
 SCENARIO("testing -"){
   Complex a(5,2);
@@ -46,6 +49,7 @@ SCENARIO("testing -"){
   Complex temp = a-b;
   REQUIRE (temp == c);
 }
+
 SCENARIO("testing -="){
   Complex a(5,2);
   Complex b(3,-3);
@@ -53,6 +57,7 @@ SCENARIO("testing -="){
   Complex c(15,-6);
   Complex temp = a-=b;
   REQUIRE (temp == c);
+}
 
 SCENARIO("testing /"){
   Complex a(5,2);
@@ -70,4 +75,4 @@ SCENARIO("testing /="){
   Complex c(5,2);
   Complex temp = a/=b;
   REQUIRE (temp == c);  
-  
+}  
