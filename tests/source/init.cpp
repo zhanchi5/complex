@@ -7,5 +7,5 @@ SCENARIO("testing +"){
   Complex b(3,-3);
   
   Complex temp = a + b;
-  REQUIRE (temp = temp(8,-1))
+  REQUIRE (temp = temp(8,-1));
 }
