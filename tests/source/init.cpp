@@ -9,5 +9,5 @@ SCENARIO("testing +"){
   Complex c(8,-1);
   
   Complex temp = a + b;
-  REQUIRE (temp = c);
+  REQUIRE (temp == c);
 }
