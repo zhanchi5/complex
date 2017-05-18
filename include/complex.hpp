@@ -95,14 +95,14 @@ public:
 
 
     // оператор /=
-    Complex operator /=(Complex &c){
-
-        assert(c.re || c.im);
+    Complex operator /=(Complex &c) {
+        Complex t(re, im);
         double r = c.re * c.re + c.im * c.im;
-        re = (re * c.re + im * c.im) / r;
-        im = (im * c.re - re * c.im ) / r;
+        re = (t.re * c.re + t.im * c.im) / r;
+        im = (t.im * c.re - t.re * c.im) / r;
         return *this;
     }
+
     // оператор деления
     Complex operator / (const Complex &c)
     {
