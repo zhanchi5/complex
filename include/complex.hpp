@@ -79,8 +79,8 @@ public:
 
     
     Complex operator *=(Complex &c){
-        re *=c.re;
-        im *=c.im;
+        re *= re * c.re - im * c.im;
+        im *= re * c.im + im * c.re;
         return *this;
     }
    
